@@ -1,5 +1,3 @@
-
-
 function checkTime() {
     let time = document.getElementById('time').value
     console.log(time)
