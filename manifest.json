@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+   
+    "name": "허리를 위하여",
+    "description": "스트레칭 타이머",
+    "version": "1.0",
+   
+    "browser_action": {
+      "default_icon": "IHurtMyBack.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab"
+    ]
+  }
