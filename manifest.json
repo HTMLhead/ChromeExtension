@@ -10,6 +10,9 @@
       "default_popup": "IHurtMyBack.html"
     },
     "permissions": [
-      "activeTab"
-    ]
+        "activeTab",
+        "storage"
+      ]
   }
+
+  
