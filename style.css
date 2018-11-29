@@ -10,3 +10,6 @@ body{
   h2{
     margin-top:0px;
   }
+  button:hover {
+    outline: rgb(255, 0, 0) dotted thick;
+  }
