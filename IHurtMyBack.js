@@ -1,13 +1,21 @@
-function click() {
-    const userStr = document.getElementById('time').value
-    const userNum = Number(userStr)
-    if(isNaN(userNum)) {
-        return alert('숫자를 입력해주세요. 다른거 말고')
+'use strict';
+
+function setAlarm() {
+    let minutes = Number(document.getElementById('time').value)
+    if(isNaN(minutes)) {
+        return alert('숫자만 입력해 주세요')
     }
-    const mintues = userNum * 60000
-    setTimeout(function() {
-        
-    }, mintues)
+    chrome.browserAction.setBadgeText({ text: 'ON' });
+    chrome.alarms.create({ delayInMinutes: minutes });
+    chrome.storage.sync.set({ minutes: minutes });
+    window.close();
 }
 
-document.getElementById('startButton').addEventListener('click', click)
+function clearAlarm() {
+    chrome.browserAction.setBadgeText({ text: '' });
+    chrome.alarms.clearAll();
+    window.close();
+}
+
+document.getElementById('startButton').addEventListener('click', setAlarm)
+document.getElementById('clearButton').addEventListener('click', clearAlarm)
