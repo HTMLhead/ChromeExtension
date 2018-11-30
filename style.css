@@ -1,10 +1,11 @@
 body{
-    width:200px;
+    width:157px;
     padding: 0px;
   }
   input{
-    font-size:12px;
+    width:60px;
     height:20px;
+    font-size:12px;
     margin-right:10px;
   }
   h2{
