@@ -13,10 +13,3 @@ chrome.alarms.onAlarm.addListener(function () {
         priority: 0
     });
 });
-
-chrome.notifications.onButtonClicked.addListener(function () {
-    chrome.storage.sync.get(['minutes'], function (item) {
-        chrome.browserAction.setBadgeText({ text: 'ON' });
-        chrome.alarms.create({ delayInMinutes: item.minutes });
-    });
-});
