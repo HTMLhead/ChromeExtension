@@ -8,7 +8,7 @@ body{
     width: 65px;
     height: 24px;
     font-size: 12px;
-    margin-right: 28px;
+    margin-right: 25px;
     margin-bottom: 0px;
   }
   h1{
@@ -16,14 +16,32 @@ body{
     margin-bottom:0px;
   }
   div.event{
-    margin-bottom: 23.5px;
-    margin-top: 23.5px;
-    height:41px
+    height:72px;
+    width:200px;
+    margin: 0 auto
   }
   .button {
     width: 41px;
-    margin-left: 4px;
+    margin-left: 6px;
   }
   .button:hover {
     outline: rgb(125, 171, 255) 
+  }
+  #manual {
+    position: relative;
+    top: 7px;
+  }
+  #startButton {
+    position: relative;
+  }
+  #clearButton {
+    position: relative;
+  }
+  #time {
+    position: relative;
+    bottom: 8.5px
+  }
+  .button:hover{
+    opacity: 0.3;
+    filter: alpha(opacity=30);
   }
