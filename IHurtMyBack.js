@@ -10,12 +10,12 @@ function isNumber(letter) {
 function displayTime(minutesTimeData) {
     time = setInterval(() => {
         minutesTimeData = minutesTimeData - 1
-        console.log(minutesTimeData)
         if (minutesTimeData <= 0) {
             clearInterval(time)
+            return chrome.browserAction.setBadgeText({text: ''})
         }
         return chrome.browserAction.setBadgeText({ text: `${minutesTimeData}` })
-    }, 6000)
+    }, 60000)
 }
 
 function setAlarm() {
@@ -26,12 +26,14 @@ function setAlarm() {
     chrome.browserAction.setBadgeText({ text: `${minutes}` })
     chrome.alarms.create({ delayInMinutes: minutes });
     chrome.storage.sync.set({ minutes: minutes });
+    window.close();
 }
 
 function clearAlarm() {
     clearInterval(time)
     chrome.browserAction.setBadgeText({ text: '' });
     chrome.alarms.clearAll();
+    window.close();
 }
 
 function alertManual() {
