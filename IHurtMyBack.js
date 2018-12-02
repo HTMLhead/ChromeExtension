@@ -1,5 +1,5 @@
 'use strict';
-let time
+let time//시간 전역 >.<
 
 function isNumber(letter) {
     if (isNaN(letter)) {
@@ -10,12 +10,11 @@ function isNumber(letter) {
 function displayTime(minutesTimeData) {
     time = setInterval(() => {
         minutesTimeData = minutesTimeData - 1
-        console.log(minutesTimeData)
         if (minutesTimeData <= 0) {
             clearInterval(time)
         }
         return chrome.browserAction.setBadgeText({ text: `${minutesTimeData}` })
-    }, 1000)
+    }, 6000)
 }
 
 function setAlarm() {
