@@ -1,5 +1,4 @@
 'use strict';
-let time//시간 전역 >.<
 
 function isNumber(letter) {
     if (isNaN(letter)) {
@@ -7,33 +6,19 @@ function isNumber(letter) {
     }
 }
 
-function displayTime(minutesTimeData) {
-    time = setInterval(() => {
-        minutesTimeData = minutesTimeData - 1
-        if (minutesTimeData <= 0) {
-            clearInterval(time)
-            return chrome.browserAction.setBadgeText({text: ''})
-        }
-        return chrome.browserAction.setBadgeText({ text: `${minutesTimeData}` })
-    }, 60000)
-}
-
 function setAlarm() {
     let minutes = Number(document.getElementById('time').value)
     if (isNumber(minutes)) return alert('숫자만 입력해 주세요.')
-
-    displayTime(minutes)
     chrome.browserAction.setBadgeText({ text: `${minutes}` })
-    chrome.alarms.create({ delayInMinutes: minutes });
-    chrome.storage.sync.set({ minutes: minutes });
-    window.close();
+    chrome.alarms.create({ delayInMinutes: minutes }); 
+    window.close()
 }
 
 function clearAlarm() {
     clearInterval(time)
     chrome.browserAction.setBadgeText({ text: '' });
     chrome.alarms.clearAll();
-    window.close();
+    window.close()
 }
 
 function alertManual() {
