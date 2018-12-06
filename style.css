@@ -29,7 +29,7 @@ body{
   }
   #manual {
     position: relative;
-    top: 7px;
+    width: 20px
   }
   #startButton {
     position: relative;
