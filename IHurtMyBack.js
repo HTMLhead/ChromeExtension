@@ -10,13 +10,13 @@ function setAlarm() {
     if (isNumber(minutes)) return alert('숫자만 입력해 주세요.')
     chrome.browserAction.setBadgeText({ text: `${minutes}` })
     chrome.alarms.create({ delayInMinutes: minutes }); 
-    window.close()
+    window.close();
 }
 function clearAlarm() {
     clearInterval(time)
     chrome.browserAction.setBadgeText({ text: '' });
     chrome.alarms.clearAll();
-    window.close()
+    window.close();
 }
 function alertManual() {
     alert(`익스텐션의 목적
@@ -31,6 +31,7 @@ function alertManual() {
 
 제작자 : head, 이모티콘 출처 : https://thenounproject.com/`)
 }
+
 document.getElementById('manual').addEventListener('click', alertManual)
 document.getElementById('startButton').addEventListener('click', setAlarm)
 document.getElementById('clearButton').addEventListener('click', clearAlarm)

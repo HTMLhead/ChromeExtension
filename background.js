@@ -4,7 +4,7 @@ chrome.alarms.onAlarm.addListener(function () {
     chrome.browserAction.setBadgeText({ text: '' });
     chrome.notifications.create({
         type: 'basic',
-        iconUrl: 'IhurtMyBack.png',
+        iconUrl: './extensionImage/IhurtMyBack.png',
         title: '스트레칭 할 시간입니다.',
         message: '쭉쭉쭉',
         buttons: [
