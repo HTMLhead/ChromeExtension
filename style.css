@@ -16,8 +16,13 @@ h1 {
 }
 
 .bubble{
+  background-image: url('./extensionImage/bubble.png');
+  float:right;
+  text-align: center;
   width: 84px;
   opacity: 0;
+  padding: 12px 1px 12px 12px;
+  margin-top: 5px;
 }
 
 .soom:hover + .bubble{
