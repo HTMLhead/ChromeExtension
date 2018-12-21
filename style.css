@@ -1,6 +1,7 @@
 .button {
-  width:40px;
-  height:40px;
+  width:35px;
+  height:35px;
+  margin-right:3px;
 }
 
 h1 {
@@ -27,4 +28,15 @@ h1 {
 
 .soom:hover + .bubble{
   opacity: 1;
+}
+
+#time {
+  margin-top:3px;
+  width:143px;
+}
+
+.btn-container {
+  position:relative;
+  left: 69.2px;
+  margin-top: 4px;
 }
