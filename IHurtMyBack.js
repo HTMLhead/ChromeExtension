@@ -2,17 +2,13 @@ class App {
   constructor() {}
 
   setAlarm() {
-    let minutes = Number(document.getElementById("time").value);
-    if (app.isNotNumber(minutes)) return alert("숫자만 입력해 주세요.");
+		let minutes = Number(document.getElementById("time").value);
+    if (app.isNotNumber(minutes)) return alert(`숫자만 입력해 주세요.`);
     chrome.browserAction.setBadgeText({ text: `${minutes}` });
     chrome.alarms.create({ delayInMinutes: minutes });
-    window.close();
   }
   isNotNumber(letter) {
-    if (isNaN(letter)) {
-      return true;
-    }
-    return false;
+    return isNaN(letter) ? true : false;
   }
   clearAlarm() {
     chrome.browserAction.setBadgeText({ text: "" });
