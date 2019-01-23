@@ -13,9 +13,9 @@
   border-radius: 4px;
 }
 
-h1 {
-  height: 24px;
-  width: 137px;
+.title {
+  font-size:25px;
+  display:inline-block;
   margin: 0px 6px;
 }
 
