@@ -7,18 +7,6 @@ body {
   border-bottom: 1px solid #060606;
 }
 
-.button {
-  width: 35px;
-  height: 35px;
-  margin-right: 3px;
-  border: 1px solid transparent;
-}
-
-.button:hover {
-  border: 1px solid #060606;
-  border-radius: 4px;
-}
-
 .title {
   font-size: 25px;
   display: inline-block;
@@ -42,19 +30,41 @@ body {
   box-sizing: border-box;
   padding: 9px 0px 0px 25px;
   opacity: 0;
+  margin-top: 2px;
 }
 
 .soom:hover+.bubble {
   opacity: 1;
 }
+.input-container{
+  padding: 0px 6px 6px 6px;
+}
+.time-inputer {
+  width: 130px;
+  outline: none;
+}
 
-#time {
-  margin-top: 3px;
-  width: 143px;
+.event {
+  padding-bottom:2px;
+  border-bottom:1px solid #606060;
 }
 
 .btn-container {
-  position: relative;
-  left: 69.2px;
-  margin-top: 4px;
+  float:right;
+  margin-top: 9px;
+  margin-right: 5px;
 }
+
+.button {
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 2px;
+}
+
+.button:hover {
+  border: 1px solid #060606;
+  border-radius: 4px;
+}
+
