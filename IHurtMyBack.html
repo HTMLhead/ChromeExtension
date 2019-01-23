@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <h1>For My Back</h1>
-    <img src='./extensionImage/soom.jpg' id='manual'class='soom'>
-    <div class='bubble'>설명해줘?</div>
-    <div class='event'>
-        <input type='text' id='time' placeholder='분 입력'>
-        <div class='btn-container'>
-            <img src='./extensionImage/startIcon.png' class='button' id='startButton'>
-            <img src='./extensionImage/deleteIcon.png' class='button' id='clearButton'>
-        </div>
+  <body>
+    <div class='title-container'><div class='title'>허리를 위하여</div></div>
+    <img src="./extensionImage/soom.jpg" id="manual" class="soom" />
+    <div class="bubble">설명해줘?</div>
+    <div class="event">
+      <input type="text" id="time" placeholder="분 입력" class='time-inputer'/>
+      <div class="btn-container">
+        <img
+          src="./extensionImage/startIcon.png"
+          class="button"
+          id="startButton"
+        />
+        <img
+          src="./extensionImage/deleteIcon.png"
+          class="button"
+          id="clearButton"
+        />
+      </div>
     </div>
-    <script src='IHurtMyBack.js'></script>
-</body>
-
+    <script src="IHurtMyBack.js"></script>
+  </body>
 </html>

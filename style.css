@@ -1,5 +1,5 @@
-body {
-  margin-bottom:6px;
+.title-container{
+  text-align:center;
 }
 .button {
   width:35px;
@@ -9,7 +9,8 @@ body {
 }
 
 .button:hover {
-  border:1px solid black;
+  border:1px solid #060606;
+  border-radius: 4px;
 }
 
 h1 {
