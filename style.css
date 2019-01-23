@@ -5,10 +5,11 @@ body {
   width:35px;
   height:35px;
   margin-right:3px;
+  border:1px solid transparent;
 }
 
 .button:hover {
-  border:0.1px solid black;
+  border:1px solid black;
 }
 
 h1 {
