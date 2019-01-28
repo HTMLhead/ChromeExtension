@@ -14,9 +14,25 @@ body {
 }
 
 .title-container {
+  position: relative;
   text-align: center;
   padding: 15px 0px;
+  transition: all 2s linear;
 }
+.title-container:before{
+  content: "";
+  position: absolute;
+  background: #060606;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+}
+.title-container:hover:before{
+  top:0;
+}
+
 .title {
   font-size: 35px;
   line-height: 45px;
@@ -44,9 +60,6 @@ body {
 }
 .input-container:hover:before{
   top:0;
-}
-.input-container:hover {
-  transition : all 1s;
 }
 
 .time-inputer {
