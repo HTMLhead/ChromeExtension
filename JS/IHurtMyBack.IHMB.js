@@ -4,7 +4,7 @@ class IHMB {
     let time = document.getElementById("time").value;
     if (time === "") return alert(`값을 입력해주세요.`);
     let minutes = Number(time);
-    if (app.isNotNumber(minutes)) return alert(`숫자만 입력해 주세요.`);
+    if (this.isNotNumber(minutes).bind(this)) return alert(`숫자만 입력해 주세요.`);
     chrome.browserAction.setBadgeText({ text: `${minutes}` });
     chrome.alarms.create({ delayInMinutes: minutes });
     window.close();
