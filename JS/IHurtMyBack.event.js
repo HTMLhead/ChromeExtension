@@ -1,4 +1,4 @@
-class ClickEvent {
+class Event {
   constructor(IHMB, explaneBtn, startBtn, endBtn) {
     this.ihmb = IHMB;
     this.explaneBtn = explaneBtn;
@@ -8,6 +8,8 @@ class ClickEvent {
   }
 
   init() {
-    
+    this.explaneBtn.addEventListener('click', this.ihmb.alertManual.bind(this));
+    this.startBtn.addEventListener('click', this.ihmb.setAlarm.bind(this));
+    this.endBtn.addEventListener('click', this.ihmb.clearAlarm.bind(this));
   }
 }
