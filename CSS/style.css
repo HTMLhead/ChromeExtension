@@ -19,56 +19,27 @@ body {
   padding: 15px 0px;
   transition: all 2s linear;
 }
-.title-container:before{
-  content: "";
-  position: absolute;
-  background: #060606;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-}
-.title-container:hover:before{
-  top:0;
-}
 
 .title {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 45px;
-  display: inline-block;
   margin: 0px 6px;
 }
 
 .input-container{
-  position: relative;
   padding: 8px;
   border-bottom:1px solid #606060;
   border-top:1px solid #606060;
   border-radius: 4px;
 }
-.input-container:before{
-  content: "";
-  position: absolute;
-  background: #060606;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  transition: top 0.09s ease-in;
-}
-.input-container:hover:before{
-  top:0;
-}
 
 .time-inputer {
   border: 1px solid #606060;
   height:30px;
-  width: 130px;
   font-size: 20px;
   outline: none;
   border-radius:4px;
+  padding-left:4px;
 }
 
 .btn-container {
@@ -81,9 +52,9 @@ body {
 .button {
   position: relative;
   cursor: pointer;
-  font-size:15px;
-  width: 35px;
-  height: 22.5px;
+  font-size:20px;
+  width: 44px;
+  height: 28px;
   box-sizing: border-box;
   border: 1px solid #606060;
   padding: 2px;

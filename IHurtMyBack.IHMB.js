@@ -7,7 +7,8 @@ class IHMB {
     if (this.isNotNumber(minutes)) return alert(`숫자만 입력해 주세요.`);
     chrome.browserAction.setBadgeText({ text: `${minutes}` });
     chrome.alarms.create({ delayInMinutes: minutes });
-    
+    chrome.storage.sync.set({minutes: minutes});
+    // window.close();
   }
   isNotNumber(letter) {
     return isNaN(letter) ? true : false;
