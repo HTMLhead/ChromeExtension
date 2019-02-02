@@ -11,16 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function setAlarm(event) {
-  let minutes = parseInt(event.target.innerText);
-  console.log(minutes);
+  let minutes = parseFloat(event.target.innerText);
   chrome.browserAction.setBadgeText({text: `${minutes}`});
   chrome.alarms.create({delayInMinutes: minutes});
   chrome.storage.sync.set({minutes: minutes});
+  window.close();
 }
 
 function clearAlarm() {
   chrome.browserAction.setBadgeText({text: ''});
   chrome.alarms.clearAll();
+  window.close();
 }
 
 function addExplane() {
