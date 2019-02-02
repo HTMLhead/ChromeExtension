@@ -8,20 +8,24 @@
   <body>
     <div class="title-container"><div class="title">허리를 위하여</div></div>
     <div class="event">
-      <div class="input-container">
-        <input
-          type="text"
-          id="time"
-          placeholder="분 입력"
-          class="time-inputer"
-        />
+      <div class="setTime-container">
+        <div class='setButton test'>0</div>
+        <div class="setButton twentyMin">20분</div>
+        <div class="setButton fortyMin">40분</div>
+        <div class="setButton sixytMin">60분</div>
       </div>
       <div class="btn-container">
-        <div class="button" id="explane">설명</div>
-        <div class="button" id="startButton">시작</div>
-        <div class="button" id="clearButton">제거</div>
+        <div class="button explane">설명</div>
+        <div class="button clearButton">제거</div>
       </div>
     </div>
-    <script src="./IHurtMyBack.app.js" type="module"></script>
+    <div class="explane-container">
+      -20, 40, 60분의 버튼을 눌러줍니다.<br>
+      -누르면 타이머가 실행됩니다.<br>
+      -타이머 이후에 알람이 뜹니다.<br>
+      -알람이뜨면 스트레칭을 해주시면 됩니다.<br>
+      -제작자:head<br>
+    </div>
+    <script src="./setAlarm.js" type="module"></script>
   </body>
 </html>
