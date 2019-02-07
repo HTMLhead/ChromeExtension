@@ -5,7 +5,7 @@ chrome.alarms.onAlarm.addListener(function() {
     iconUrl: "extensionImage/IHurtMyBack.png",
     title: "스트레칭할 시간입니다!",
     message: " ",
-    buttons: [{ title: "찾아보세요 이스터에그." }],
+    buttons: [{ title: "찾아보세요 이스터에그!" }],
     priority: 0
   });
 });
