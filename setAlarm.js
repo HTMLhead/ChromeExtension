@@ -1,7 +1,7 @@
 import { qs } from './util.js';
 
 class Alarm {
-  setAlarm(event) {
+  set(event) {
     let minutes = parseFloat(event.target.innerText);
     chrome.browserAction.setBadgeText({text: `${minutes}`});
     chrome.alarms.create({delayInMinutes: minutes});
@@ -9,7 +9,7 @@ class Alarm {
     window.close();
   }
   
-  clearAlarm() {
+  clear() {
     chrome.browserAction.setBadgeText({text: ''});
     chrome.alarms.clearAll();
     window.close();
