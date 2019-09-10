@@ -8,7 +8,7 @@
 
 ## 다운로드 받기
 
-* [](https://chrome.google.com/webstore/detail/%ED%97%88%EB%A6%AC%EB%A5%BC-%EC%9C%84%ED%95%98%EC%97%AC/jcidnioampdillcdgmgimbnfhminmjhi?hl=ko)
+* [허리를 위하여](https://chrome.google.com/webstore/detail/%ED%97%88%EB%A6%AC%EB%A5%BC-%EC%9C%84%ED%95%98%EC%97%AC/jcidnioampdillcdgmgimbnfhminmjhi?hl=ko)
 
 ## 사용 방법
 
